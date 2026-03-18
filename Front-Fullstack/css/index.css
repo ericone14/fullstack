@@ -1,0 +1,33 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    gap: 10px;
+}
+
+#container div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 300px;
+    padding: 6px;
+}
+
+#container div p {
+    font-size: 2rem;
+}
+
+#container div a {
+    background-color: rgb(182, 182, 182);
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+#container div a:hover {
+    background-color: rgb(159, 159, 159);
+}

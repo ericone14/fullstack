@@ -1,0 +1,31 @@
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 36px;
+    gap: 16px;
+}
+
+#container div p {
+    font-size: 2rem;
+}
+
+#container div img {
+    width: 350px;
+}
+
+#container div:nth-child(2) {
+    display: grid;
+    max-width: 750px;
+}
+
+#btnExcluir {
+    background-color: rgb(239, 2, 2);
+    padding: 6px 16px;
+    border: solid black 1px;
+    justify-self: flex-end;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}

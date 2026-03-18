@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo livro</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/novoLivro.css">
+</head>
+<body>
+    
+    <header>
+        <div>
+            <h1>Projeto Fullstack</h1>
+        </div>
+
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./novoLivro.html">Adicionar livro</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Adicionar um novo livro</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+
+            <label for="imagem">Imagem:</label>
+            <input type="text" id="imagem" name="imagem" required />
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" min="0" required />
+
+            <input type="submit" id="btnCriar" value="Enviar">
+        </form>
+    </main>
+
+    <script src="../scripts/novoLivro.js"></script>
+
+</body>
+</html>
