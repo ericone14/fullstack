@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 // get livro por id
 router.get('/:id', async (req, res) => {
     try {
-        const livro = await Livro.findByPK(req.params.id);
+        const livro = await Livro.findByPk(req.params.id);
         if (livro) {
             res.json(livro);
         } else {

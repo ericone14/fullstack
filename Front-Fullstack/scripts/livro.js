@@ -6,7 +6,7 @@ const id = params.get('id');
 
 const container = document.getElementById("container");
 
-fetch("http://localhost:3000/livros" + id)
+fetch("http://localhost:3000/livros/" + id)
 .then(response => response.json())
 .then(response => {
     document.title = response.nome
@@ -43,7 +43,7 @@ fetch("http://localhost:3000/livros" + id)
 })
 
 function fetchExcluir() {
-    fetch("http://localhost:3000/livros" + id, {
+    fetch("http://localhost:3000/livros/" + id, {
         method: "DELETE"
     })
     .then(response => response.json())
